@@ -37,7 +37,9 @@ body {
 }
 
 /* setting everything up */
-
+.content{
+    padding: 3rem;
+}
 
 .title {
     color: var(--title-color, var(--clr-darkgray));
