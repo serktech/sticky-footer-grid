@@ -29,11 +29,15 @@ body {
     margin: 0;
     font-family: Rubik, sans-serif;
     /*font-family: 'Work Sans', sans-serif;*/
-    min-height: 100vh;
+
     font-size: 1.125em;
     line-height: 1.6;
     color: var(--clr-darkgray);
     background: var(--clr-lightgray);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* setting everything up */
@@ -62,5 +66,5 @@ footer {
     color: var(--clr-lightgray);
     background: var(--clr-darkgray);
     padding: 3em 15vw;
-    margin-top: 5em;
+    margin-top: auto;
 }
