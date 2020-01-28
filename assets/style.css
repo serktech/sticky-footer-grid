@@ -1,0 +1,64 @@
+/* Setup a few global properties that can
+   be reused to help with consistency */
+
+:root {
+    --clr-white: #efefef;
+    --clr-lightgray: #ddd;
+    --clr-darkgray: #333;
+    --clr-accent: #09252a;
+
+    --icon-plus: "\f067";
+    --icon-check: "\f00c";
+
+    --title-size: calc(2rem + 5vw);
+    --title-color: var(--clr-accent);
+}
+
+
+
+
+
+/* generic styling that's not important
+   for the demo */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Rubik, sans-serif;
+    /*font-family: 'Work Sans', sans-serif;*/
+    min-height: 100vh;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: var(--clr-darkgray);
+    background: var(--clr-lightgray);
+}
+
+/* setting everything up */
+
+
+.title {
+    color: var(--title-color, var(--clr-darkgray));
+    font-size: var(--title-size);
+    font-weight: var(--title-weight, 700);
+
+    margin: 0 0 .15em;
+    grid-column: 1 / -1;
+    line-height: 1;
+}
+
+/* styling each component by defining the custom properties optional test */
+
+
+
+footer {
+    --title-color: var(--clr-accent);
+    --title-weight: 300;
+
+    color: var(--clr-lightgray);
+    background: var(--clr-darkgray);
+    padding: 3em 15vw;
+    margin-top: 5em;
+}
